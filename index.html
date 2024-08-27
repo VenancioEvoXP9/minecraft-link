@@ -10,22 +10,21 @@
             padding: 20px; /* Adiciona um espaçamento interno */
         }
         
-        .imagem-grupo {
-            width: 100%;
-            height: auto;
-            display: block; /* Garante que a imagem ocupe toda a largura do seu contêiner */
-            margin-bottom: 20px;
-            max-width: 600px; /* Define a largura máxima da imagem */
+        .imagem-grupo,
+        .passo {
+            display: block;
+            margin: 0 auto 20px; /* Centraliza horizontalmente e adiciona espaço inferior */
+            max-width: 800px; /* Define a largura máxima das imagens */
             height: auto; /* Mantém a proporção da altura */
         }
         
+        .imagem-grupo {
+            width: 100%; /* Ocupa toda a largura do contêiner pai */
+        }
+        
         .passo {
-            width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto 20px; /* Centraliza horizontalmente e adiciona espaço inferior */
-            max-width: 400px; /* Define a largura máxima da imagem */
-            height: auto; /* Mantém a proporção da altura */
+            width: 100%; /* Ocupa toda a largura do contêiner pai */
+            max-width: 600px; /* Define uma largura máxima menor para as etapas */
         }
         
         body {
