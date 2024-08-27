@@ -4,16 +4,24 @@
     <meta charset="UTF-8">
     <title>Adicionar Servidor Minecraft</title>
     <style>
+        .conteudo {
+            max-width: 800px;
+            margin: 0 auto; /* Centraliza o conteúdo na página */
+            padding: 20px; /* Adiciona um espaçamento interno */
+        }
+        
         .imagem-grupo {
-            width: 200px;
+            width: 100%;
             height: auto;
+            display: block; /* Garante que a imagem ocupe toda a largura do seu contêiner */
             margin-bottom: 20px;
         }
         
         .passo {
-            width: 150px;
+            width: 100%;
             height: auto;
-            margin-top: 20px;
+            display: block;
+            margin: 0 auto 20px; /* Centraliza horizontalmente e adiciona espaço inferior */
         }
         
         body {
@@ -21,32 +29,38 @@
             margin: 20px;
         }
 
+        h1, p {
+            text-align: center; /* Centraliza o título e o texto */
+        }
+
         p {
-            margin-top: 20px;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <img src="foto_perfil.jpg" alt="Identificação da Comunidade" class="imagem-grupo">
-    
-    <h1>Adicionar Servidor Minecraft</h1>
-    <p>Clique no link abaixo para adicionar o servidor automaticamente ao Minecraft:</p>
-    <a href="minecraft://?addExternalServer=Quadrados%26Trav.%7Cneptune.ca.freemcserver.net:28578">Adicionar Servidor Minecraft</a>
-    
-    <img src="etapa_1.jpg" alt="Passo 1" class="passo">
-    
-    <p>Texto explicativo sobre a etapa 1.</p>
+    <div class="conteudo">
+        <img src="foto_perfil.jpg" alt="Identificação da Comunidade" class="imagem-grupo">
+        
+        <h1>Adicionar Servidor Minecraft</h1>
+        <p>Clique no link abaixo para adicionar o servidor automaticamente ao Minecraft:</p>
+        <a href="minecraft://?addExternalServer=Quadrados%26Trav.%7Cneptune.ca.freemcserver.net:28578">Adicionar Servidor Minecraft</a>
+        
+        <img src="imagens/etapa_1.jpg" alt="Passo 1" class="passo">
+        
+        <p>Texto explicativo sobre a etapa 1.</p>
 
-    <img src="etapa_2.jpg" alt="Passo 2" class="passo">
-    
-    <p>Texto explicativo sobre a etapa 2.</p>
-    
-    <img src="etapa_3.jpg" alt="Passo 3" class="passo">
-    
-    <p>Texto explicativo sobre a etapa 3.</p>
-    
-    <img src="etapa_4.jpg" alt="Passo 4" class="passo">
-    
-    <p>Texto explicativo sobre a etapa 4.</p>
+        <img src="imagens/etapa_2.jpg" alt="Passo 2" class="passo">
+        
+        <p>Texto explicativo sobre a etapa 2.</p>
+        
+        <img src="imagens/etapa_3.jpg" alt="Passo 3" class="passo">
+        
+        <p>Texto explicativo sobre a etapa 3.</p>
+        
+        <img src="imagens/etapa_4.jpg" alt="Passo 4" class="passo">
+        
+        <p>Texto explicativo sobre a etapa 4.</p>
+    </div>
 </body>
 </html>
