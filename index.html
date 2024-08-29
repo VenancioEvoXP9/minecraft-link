@@ -73,7 +73,35 @@
         
         <img src="etapa_4.jpg" alt="Passo 4" class="passo">
         
-        <p>4° PASSO: Adicione o endereço e porta especificados na imagem. Sugiro que copie o <span class="maiuculas">ENDEREÇO</span>: neptune.ca.freemcserver.net e memorize os dígitos da <span class="maiuculas">PORTA</span>: 28578 para adicionar o servidor manualmente. Feito isso, clique no botão <span class="maiuculas">SALVAR</span>.</p>
+        <p>4° PASSO: Adicione o endereço e porta especificados para adicionar o servidor manualmente. Feito isso, clique no botão <span class="maiuculas">SALVAR</span>.</p>
+
+        <body>
+
+    <!-- Campo de texto para copiar -->
+    <input type="text" value="Texto a ser copiado" id="textoParaCopiar">
+
+    <!-- Botão para copiar o texto -->
+    <button onclick="copiarTexto()">Copiar</button>
+
+    <!-- JavaScript para copiar o texto -->
+    <script>
+        function copiarTexto() {
+            // Seleciona o campo de texto
+            var texto = document.getElementById("textoParaCopiar");
+
+            // Seleciona o conteúdo do campo de texto
+            texto.select();
+            texto.setSelectionRange(0, 99999); // Para dispositivos móveis
+
+            // Copia o texto para a área de transferência
+            document.execCommand("copy");
+
+            // Alerta ou mensagem opcional para o usuário
+            alert("Texto copiado: " + texto.value);
+        }
+    </script>
+
+        </body>
 
         <p>Para abrir o jogo, clique no link abaixo:</p>
         <p><a href="URL_DE_ABERTURA" target="_blank">Abrir Minecraft</a></p>
