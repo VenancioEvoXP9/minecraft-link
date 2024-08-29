@@ -43,6 +43,12 @@
             display: block;
             margin: 0 auto 20px;
         }
+        .button-container {
+            margin-top: 1rem;
+        }
+        .button-container button {
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
@@ -77,35 +83,39 @@
         <img src="etapa_4.jpg" alt="Passo 4" class="passo">
         
         <p>4° PASSO: Adicione o endereço e porta especificados em seus respectivos campos dentro do jogo, em seguida clicar no botão "SALVAR". Você pode copiar ENDEREÇO e PORTA logo abaixo:</p>
+        
+        <div class="button-container">
+            <!-- Campo de texto para copiar o endereço -->
+            <input type="text" value="neptune.ca.freemcserver.net" id="textoEndereco">
 
-        <body>
+            <!-- Botão para copiar o endereço -->
+            <button onclick="copiarTexto('textoEndereco')">Copiar Endereço</button>
+            
+            <!-- Campo de texto para copiar a porta -->
+            <input type="text" value="22222" id="textoPorta">
 
-    <!-- Campo de texto para copiar -->
-    <input type="text" value="neptune.ca.freemcserver.net" id="textoParaCopiar">
+            <!-- Botão para copiar a porta -->
+            <button onclick="copiarTexto('textoPorta')">Copiar Porta</button>
+        </div>
 
-    <!-- Botão para copiar o texto -->
-    <button onclick="copiarTexto()">Copiar</button>
+        <!-- JavaScript para copiar o texto -->
+        <script>
+            function copiarTexto(id) {
+                // Seleciona o campo de texto pelo ID
+                var texto = document.getElementById(id);
 
-    <!-- JavaScript para copiar o texto -->
-    <script>
-        function copiarTexto() {
-            // Seleciona o campo de texto
-            var texto = document.getElementById("textoParaCopiar");
+                // Seleciona o conteúdo do campo de texto
+                texto.select();
+                texto.setSelectionRange(0, 99999); // Para dispositivos móveis
 
-            // Seleciona o conteúdo do campo de texto
-            texto.select();
-            texto.setSelectionRange(0, 99999); // Para dispositivos móveis
+                // Copia o texto para a área de transferência
+                document.execCommand("copy");
 
-            // Copia o texto para a área de transferência
-            document.execCommand("copy");
-
-            // Alerta ou mensagem opcional para o usuário
-            alert("Texto copiado: " + texto.value);
-        }
-    </script>
-
-        </body>
-
+                // Alerta ou mensagem opcional para o usuário
+                alert("Texto copiado: " + texto.value);
+            }
+        </script>
+        
         <p>Já tem domínio sobre o passo a passo? abra o jogo para fazer realizar o procedimento citado e adicionar o servidor "HexaRealm", clique no link abaixo:</p>
         <p><a href="URL_DE_ABERTURA" target="_blank">Abrir Minecraft</a></p>
 
@@ -120,6 +130,4 @@
         
         <h2>Considerações Finais</h2>
         <p>Esperamos que você aproveite sua experiência em nosso servidor. Se tiver qualquer dúvida ou precisar de ajuda, não hesite em nos contatar. Divirta-se jogando e bem-vindo à nossa comunidade!</p>
-    </section>
-</body>
-</html>
+        
