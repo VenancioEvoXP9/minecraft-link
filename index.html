@@ -130,8 +130,41 @@
         <img src="entrar_xbox.jpg" alt="Xbox" class="Conta">
 
         <h2>E agora? Como faço para jogar no HexaReals?</h2>
-        <p>Configurado tudo até aqui, abra o seu jogo e entre no servidor que você adicionou, caso não haja .</p>
+        <p>Configurado tudo até aqui, abra o seu jogo e entre no servidor que você adicionou, caso não haja ninguém nele e ao acessá-lo apareça a mensagem "Não foi possível conectar-se ao mundo" você precisará ligá-lo. Basta você acessar o link <a hrfe="freemcserver.net" target=_blank" >gerenciar servidor</a>, realizar o login como Hexa-Player e Ligá-lo. </p>
         
+        <imag src="login_server.jpg" alt="Login" class="passo">
+
+        <div class="button-container">
+            <!-- Campo de texto para copiar o username -->
+            <input type="text" value="Hexa.Players" id="textoUsername">
+
+            <!-- Botão para copiar o username -->
+            <button onclick="copiarTexto('textoUsername')">Copiar Username</button>
+            
+            <!-- Campo de texto para copiar a senha -->
+            <input type="text" value="@Hexaplayers2024" id="textoSenha">
+
+            <!-- Botão para copiar a senha -->
+            <button onclick="copiarTexto('textoSenha')">Copiar Senha</button>
+        </div>
+
+        <!-- JavaScript para copiar o texto -->
+        <script>
+            function copiarTexto(id) {
+                // Seleciona o campo de texto pelo ID
+                var texto = document.getElementById(id);
+
+                // Seleciona o conteúdo do campo de texto
+                texto.select();
+                texto.setSelectionRange(0, 99999); // Para dispositivos móveis
+
+                // Copia o texto para a área de transferência
+                document.execCommand("copy");
+
+                // Alerta ou mensagem opcional para o usuário
+                alert("Texto copiado: " + texto.value);
+            }
+        </script>
 
 <h3>Botões de Ligar (Start) e Desligar (Stop) no Servidor</h3>
 
