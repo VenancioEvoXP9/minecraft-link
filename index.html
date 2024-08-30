@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servidor Minecraft HexaRealm oferece uma experiência única com suporte e eventos para todos os jogadores. Junte-se a nós!">
+    <meta name="keywords" content="Minecraft, HexaRealm, servidor Minecraft, jogar Minecraft, criar conta Xbox">
     <title>Servidor Minecraft - HexaRealm</title>
     <style>
         body {
@@ -10,6 +12,8 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
         header {
             background: #333;
@@ -21,6 +25,9 @@
             padding: 2rem;
             max-width: 800px;
             margin: 0 auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         a {
             color: #007BFF;
@@ -36,26 +43,17 @@
         p {
             text-align: justify;
         }
-        img.passo, img.Conta {
+        img.passo, img.Conta, img.perfil, img.Player, img.Server {
             width: 100%;
             height: auto;
-            max-width: 100%;
             display: block;
             margin: 0 auto 20px;
         }
         img.perfil {
-            width: 100%;
-            height: auto;
             max-width: 800px;
-            display: block;
-            margin: 0 auto 20px;
         }
         img.Player, img.Server {
-            width: 60%;
-            height: auto;
             max-width: 500px;
-            display: block;
-            margin: 0 auto 20px;
         }
         .button-container {
             margin-top: 1rem;
@@ -63,11 +61,22 @@
         .button-container button {
             margin-right: 10px;
         }
+        .button-container label {
+            display: block;
+            margin-top: 10px;
+        }
         footer {
             background: #333;
             color: #fff;
             padding: 1rem;
             text-align: center;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            img.Player, img.Server, img.perfil {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -76,7 +85,7 @@
         <h1>Bem-vindo ao Servidor Minecraft - HexaRealm</h1>
     </header>
     <section>
-        <img src="foto_perfil.jpg" alt="Perfil" class="perfil">
+        <img src="foto_perfil.jpg" alt="Imagem do perfil do servidor HexaRealm" class="perfil">
         
         <h2>Introdução</h2>
         <p>Bem-vindo à nossa comunidade de Minecraft! O servidor "HexaRealm" oferece uma experiência única de jogo com uma variedade de recursos e eventos para todos os jogadores. Nossos membros desfrutam de um ambiente amigável e divertido, com suporte constante para garantir uma jogabilidade de alta qualidade. O servidor está em sua primeira fase, portanto apresse-se para ajudar a elevar nossa comunidade dentro do jogo, lembre-se de estar bem equipado e preparado para enfrentar criaturas hostis!</p>
@@ -85,35 +94,37 @@
         
         <h2>Download do APK</h2>
         <p>Para jogar no nosso servidor, você precisará da versão compatível do Minecraft Bedrock. Baixe o APK através do link abaixo:</p>
-        <p><a href="https://www.apkshub.com/todown/com.mojang.minecraftpe_1.21.0.03_free">Baixar Minecraft PE 1.21.0.03</a></p>
+        <p><a href="https://www.apkshub.com/todown/com.mojang.minecraftpe_1.21.0.03_free" target="_blank">Baixar Minecraft PE 1.21.0.03</a></p>
         
         <h2>Passo a Passo para Adicionar o Servidor</h2>
         <p>Veja nosso tutorial completo e aprenda a como adicionar um servidor manualmente:</p>
         
-        <img src="etapa_1.jpg" alt="Passo 1" class="passo">
+        <img src="etapa_1.jpg" alt="Passo 1 - Instalar Minecraft PE" class="passo">
         
-        <p><strong>1° PASSO:</strong> Certifique-se de ter instalado a versão correta do jogo, <a href="https://www.apkshub.com/todown/com.mojang.minecraftpe_1.21.0.03_free">Baixar Minecraft PE 1.21.0.03</a>. Após a instalação, acesse o link ao final do passo a passo, aguarde o redirecionamento e clique em <span class="maiuculas">JOGAR</span>.</p>
+        <p><strong>1° PASSO:</strong> Certifique-se de ter instalado a versão correta do jogo, <a href="https://www.apkshub.com/todown/com.mojang.minecraftpe_1.21.0.03_free" target="_blank">Baixar Minecraft PE 1.21.0.03</a>. Após a instalação, acesse o link ao final do passo a passo, aguarde o redirecionamento e clique em <span class="maiuculas">JOGAR</span>.</p>
 
-        <img src="etapa_2.jpg" alt="Passo 2" class="passo">
+        <img src="etapa_2.jpg" alt="Passo 2 - Selecionar SERVIDORES" class="passo">
         
         <p><strong>2° PASSO:</strong> Após ter clicado em <span class="maiuculas">JOGAR</span>, selecione <span class="maiuculas">SERVIDORES</span> no canto superior direito da tela.</p>
 
-        <img src="etapa_3.jpg" alt="Passo 3" class="passo">
+        <img src="etapa_3.jpg" alt="Passo 3 - Adicionar SERVIDOR" class="passo">
         
         <p><strong>3° PASSO:</strong> Toque em <span class="maiuculas">ADICIONAR SERVIDOR</span>.</p>
 
-        <img src="etapa_4.jpg" alt="Passo 4" class="passo">
+        <img src="etapa_4.jpg" alt="Passo 4 - Inserir Endereço e Porta" class="passo">
         
         <p><strong>4° PASSO:</strong> Adicione o endereço e porta especificados em seus respectivos campos dentro do jogo, em seguida clicar no botão "SALVAR". Você pode copiar ENDEREÇO e PORTA logo abaixo:</p>
         
         <div class="button-container">
             <!-- Campo de texto para copiar o endereço -->
+            <label for="textoEndereco">Endereço:</label>
             <input type="text" value="neptune.ca.freemcserver.net" id="textoEndereco" readonly>
 
             <!-- Botão para copiar o endereço -->
             <button onclick="copiarTexto('textoEndereco')">Copiar Endereço</button>
             
             <!-- Campo de texto para copiar a porta -->
+            <label for="textoPorta">Porta:</label>
             <input type="text" value="44681" id="textoPorta" readonly>
 
             <!-- Botão para copiar a porta -->
@@ -155,16 +166,6 @@
 
             <button onclick="copiarTexto('textoSenha')">Copiar Senha</button>
         </div>
-
-        <script>
-            function copiarTexto(id) {
-                var texto = document.getElementById(id);
-                texto.select();
-                texto.setSelectionRange(0, 99999); // Para dispositivos móveis
-                document.execCommand("copy");
-                alert("Texto copiado: " + texto.value);
-            }
-        </script>
 
         <img src="login_server.jpg" alt="Login do Servidor" class="Player">
 
