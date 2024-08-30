@@ -63,6 +63,12 @@
         .button-container button {
             margin-right: 10px;
         }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -102,13 +108,13 @@
         
         <div class="button-container">
             <!-- Campo de texto para copiar o endereço -->
-            <input type="text" value="neptune.ca.freemcserver.net" id="textoEndereco">
+            <input type="text" value="neptune.ca.freemcserver.net" id="textoEndereco" readonly>
 
             <!-- Botão para copiar o endereço -->
             <button onclick="copiarTexto('textoEndereco')">Copiar Endereço</button>
             
             <!-- Campo de texto para copiar a porta -->
-            <input type="text" value="44681" id="textoPorta">
+            <input type="text" value="44681" id="textoPorta" readonly>
 
             <!-- Botão para copiar a porta -->
             <button onclick="copiarTexto('textoPorta')">Copiar Porta</button>
@@ -117,28 +123,22 @@
         <!-- JavaScript para copiar o texto -->
         <script>
             function copiarTexto(id) {
-                // Seleciona o campo de texto pelo ID
                 var texto = document.getElementById(id);
-
-                // Seleciona o conteúdo do campo de texto
                 texto.select();
                 texto.setSelectionRange(0, 99999); // Para dispositivos móveis
-
-                // Copia o texto para a área de transferência
                 document.execCommand("copy");
-
-                // Alerta ou mensagem opcional para o usuário
                 alert("Texto copiado: " + texto.value);
             }
         </script>
         
         <p><strong>Já sabe como adicionar o Server?</strong> Abra o jogo para realizar o procedimento citado, e adicionar o servidor "HexaRealm", clique no link abaixo:</p>
         <p><a href="minecraft://?addExternalServer=Neptune|neptune.ca.freemcserver.net|28578" target="_blank">Abrir Minecraft</a></p>
+
         <h2>Criar Conta Xbox</h2>
         <p>Para uma experiência mais completa, crie sua conta Xbox para poder desbloquear o sistema de conquistas e impulsionar sua gameplay. É fácil e intuitivo, clique no link abaixo e informe seus dados para a criação da conta, você receberá um código de confirmação por e-mail e precisará criar sua gamertag (nome de jogador).</p>
         <p><a href="https://signup.live.com/signup?client_id=1f907974-e22b-4810-a9de-d9647380c97e&contextid=D13FE6EEF36F0080&opid=A4819A8BBCA74EDB&bk=1724955605&sru=https://login.live.com/oauth20_authorize.srf%3fclient_id%3d1f907974-e22b-4810-a9de-d9647380c97e%26client_id%3d1f907974-e22b-4810-a9de-d9647380c97e%26contextid%3dD13FE6EEF36F0080%26opid%3dA4819A8BBCA74EDB%26mkt%3dPT-BR%26lc%3d1046%26bk%3d1724955605%26uaid%3d3aea19e8426e499b9e2785d5c548cd18&uiflavor=web&lic=1&mkt=PT-BR&lc=1046&uaid=3aea19e8426e499b9e2785d5c548cd18" target="_blank">Criar Conta Microsoft</a></p>
         <p><strong>Conta Xbox criada?</strong> Abra seu jogo e procure a opção "ENTRAR", basta você entrar pelo e-mail e senha criados, a partir da próxima vez que entrar no jogo a conta Xbox já começará a conectar-se automaticamente ao Minecraft.</p>
-                <img src="entrar_xbox.jpg" alt="Conta Xbox" class="Conta">
+        <img src="entrar_xbox.jpg" alt="Conta Xbox" class="Conta">
 
         <h2>Como Jogar no HexaRealm</h2>
             
@@ -193,5 +193,3 @@
     </section>
 </body>
 </html>
-
-            
