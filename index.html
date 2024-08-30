@@ -138,7 +138,50 @@
         <p>Para uma experiência mais completa, crie sua conta Xbox para poder desbloquear o sistema de conquistas e impulsionar sua gameplay. É fácil e intuitivo, clique no link abaixo e informe seus dados para a criação da conta, você receberá um código de confirmação por e-mail e precisará criar sua gamertag (nome de jogador).</p>
         <p><a href="https://signup.live.com/signup?client_id=1f907974-e22b-4810-a9de-d9647380c97e&contextid=D13FE6EEF36F0080&opid=A4819A8BBCA74EDB&bk=1724955605&sru=https://login.live.com/oauth20_authorize.srf%3fclient_id%3d1f907974-e22b-4810-a9de-d9647380c97e%26client_id%3d1f907974-e22b-4810-a9de-d9647380c97e%26contextid%3dD13FE6EEF36F0080%26opid%3dA4819A8BBCA74EDB%26mkt%3dPT-BR%26lc%3d1046%26bk%3d1724955605%26uaid%3d3aea19e8426e499b9e2785d5c548cd18&uiflavor=web&lic=1&mkt=PT-BR&lc=1046&uaid=3aea19e8426e499b9e2785d5c548cd18" target="_blank">Criar Conta Microsoft</a></p>
         <p><strong>Conta Xbox criada?</strong> Abra seu jogo e procure a opção "ENTRAR", basta você entrar pelo e-mail e senha criados, a partir da próxima vez que entrar no jogo a conta Xbox já começará a conectar-se automaticamente ao Minecraft.</p>
+                <img src="entrar_xbox.jpg" alt="Conta Xbox" class="Conta">
 
+        <h2>Como Jogar no HexaRealm</h2>
+            
+        <p>Após configurar tudo, abra o Minecraft e entre no servidor que você adicionou. Se o servidor estiver vazio e você encontrar a mensagem "Não foi possível conectar-se ao mundo", é porque ele está inativo. Para ativá-lo, acesse o link <a href="https://freemcserver.net" target="_blank">Gerenciar Servidor</a>, faça login como Hexa-Player e ligue o servidor. Abaixo, você encontra as informações de login e uma imagem que mostra onde realizar o login.</p>
+
+        <div class="button-container">
+            <label for="textoUsername">Username:</label>
+            <input type="text" value="Hexa.Players" id="textoUsername" readonly>
+
+            <button onclick="copiarTexto('textoUsername')">Copiar Username</button>
+            
+            <label for="textoSenha">Senha:</label>
+            <input type="text" value="@Hexaplayers2024" id="textoSenha" readonly>
+
+            <button onclick="copiarTexto('textoSenha')">Copiar Senha</button>
+        </div>
+
+        <script>
+            function copiarTexto(id) {
+                var texto = document.getElementById(id);
+                texto.select();
+                texto.setSelectionRange(0, 99999); // Para dispositivos móveis
+                document.execCommand("copy");
+                alert("Texto copiado: " + texto.value);
+            }
+        </script>
+
+        <img src="login_server.jpg" alt="Login do Servidor" class="Player">
+
+        <p><strong>Importante:</strong> Periodicamente, você precisará renovar o servidor antes de ligá-lo para garantir que ele continue funcionando sem custos. Veja um anúncio para evitar a necessidade de renovação nas próximas 6 horas, ou em 4 horas se optar por não assistir ao anúncio. Após a renovação, você poderá ligar o servidor e acessar o HexaRealm no jogo.</p>
+
+        <img src="renovar_server.jpg" alt="Renovar Servidor" class="Server">
+
+        <h3>Botões de Ligar e Desligar o Servidor</h3>
+        
+        <p><strong>Start (Ligar):</strong> Utilize o botão Start para iniciar ou reativar o servidor. Se o servidor estiver desligado ou em hibernação (desligado automaticamente por inatividade), clique em Start para ativá-lo. Isso é necessário ao iniciar uma nova sessão ou quando o servidor foi hibernado por falta de jogadores.</p>
+
+        <p><strong>Stop (Desligar):</strong> O botão Stop serve para desligar manualmente o servidor em situações específicas, como manutenção ou atualizações. Desligar manualmente permite um controle mais preciso sobre o encerramento do servidor, evitando atividades inesperadas.</p>
+
+        <p><strong>Funcionamento Automático:</strong> No FreeMcServer.net, o servidor entra automaticamente em hibernação quando todos os jogadores saem e o servidor fica inativo por um período. Para reativar o servidor quando ele estiver hibernado, basta usar o botão Start.</p>
+        
+        <img src="ligar_server.jpg" alt="Ligar Servidor" class="Server">
+        
         <h2>Considerações Finais</h2>
         <p>Estamos ansiosos para ver você em nosso servidor e esperamos que você tenha uma experiência incrível no HexaRealm. Caso encontre algum problema ou tenha dúvidas, não hesite em nos contatar. Nossa equipe está sempre disponível para ajudar e garantir que sua experiência de jogo seja a melhor possível.</p>
         <p>Se você gosta do servidor e quer ajudar a torná-lo ainda melhor, considere deixar um feedback ou uma sugestão. Apreciamos muito a sua participação e contribuição para a nossa comunidade.</p>
