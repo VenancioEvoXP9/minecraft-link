@@ -173,65 +173,40 @@
         <p>Estamos ansiosos para ver você em nosso servidor e esperamos que você tenha uma experiência incrível no HexaRealm. Caso encontre algum problema ou tenha dúvidas, não hesite em nos contatar. Nossa equipe está sempre disponível para ajudar e garantir que sua experiência de jogo seja a melhor possível.</p>
         <p>Se você gosta do servidor e quer ajudar a torná-lo ainda melhor, considere deixar um feedback ou uma sugestão. Apreciamos muito a sua participação e contribuição para a nossa comunidade.</p>
         <p><strong>Boa diversão e bons jogos!</strong></p>
-
-        <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-(function() {
-    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/66d32debea492f34bc0c33b1/default';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-
-<!-- Script para forçar tradução para Português Brasil -->
-<script type="text/javascript">
-document.addEventListener('DOMContentLoaded', function() {
-    // Função para alterar o idioma da página para Português Brasil usando Google Translate
-    function translatePage() {
-        if (!document.querySelector('iframe[id*="googtrans"]')) {
-            var script = document.createElement('script');
-            script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-            document.head.appendChild(script);
-        }
+  
+  <!-- Google Translate Widget -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en', // idioma original da página
+        includedLanguages: 'pt', // idiomas para os quais traduzir
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
     }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+  
+  <!-- Conteúdo da Página -->
+  <div id="google_translate_element"></div>
 
-    // Inicializa o Google Translate
-    window.googleTranslateElementInit = function() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'en',
-            includedLanguages: 'pt',
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-        }, 'google_translate_element');
-    };
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {};
+    Tawk_API.lang = 'pt'; // Define o idioma para português
 
-    // Função para verificar se o chat foi aberto
-    function checkChatOpen() {
-        if (typeof Tawk_API !== 'undefined' && Tawk_API.onLoad) {
-            Tawk_API.onLoad = function() {
-                translatePage();
-            };
-        }
-    }
-
-    // Verifica se o chat está carregado e define o callback para tradução
-    var checkChatInterval = setInterval(function() {
-        if (typeof Tawk_API !== 'undefined' && typeof Tawk_API.onLoad === 'function') {
-            clearInterval(checkChatInterval);
-            checkChatOpen();
-        }
-    }, 1000); // Verifica a cada segundo
-
-});
-</script>
-
-<!-- Container para o Google Translate -->
-<div id="google_translate_element"></div>
-
+    Tawk_LoadStart = new Date();
+    (function(){
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/66d32debea492f34bc0c33b1/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 
         <footer>
             <p>&copy; 2024 HexaRealm. Todos os direitos reservados.</p>
