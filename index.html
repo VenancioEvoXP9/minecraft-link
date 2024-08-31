@@ -205,9 +205,20 @@
       s1.setAttribute('crossorigin','*');
       s0.parentNode.insertBefore(s1,s0);
     })();
+
+    // Adiciona um atraso para ativar a tradução após o chat ser carregado
+    function initializeTranslation() {
+      setTimeout(function() {
+        if (typeof google !== 'undefined' && google.translate) {
+          google.translate.TranslateElement.getInstance().setEnabled(true);
+        }
+      }, 5000); // 5 segundos de atraso
+    }
+
+    window.onload = initializeTranslation; // Chama a função após a página ser carregada
   </script>
   <!--End of Tawk.to Script-->
-
+        
         <footer>
             <p>&copy; 2024 HexaRealm. Todos os direitos reservados.</p>
         </footer>
