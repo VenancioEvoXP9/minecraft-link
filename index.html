@@ -177,55 +177,49 @@
         <p>Se você gosta do servidor e quer ajudar a torná-lo ainda melhor, considere deixar um feedback ou uma sugestão. Apreciamos muito a sua participação e contribuição para a nossa comunidade.</p>
         <p><strong>Boa diversão e bons jogos!</strong></p>
   
-  <!-- Google Translate Widget -->
-  <style>
-    #google_translate_element {
-      display: none; /* Oculta o widget do Google Translate */
-    }
-  </style>
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'en', // idioma original da página
-        includedLanguages: 'pt', // idiomas para os quais traduzir
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-      }, 'google_translate_element');
-    }
-  </script>
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-</head>
-<body>
-  
-  <!-- Conteúdo da Página -->
-  <div id="google_translate_element"></div>
+        <!-- Google Translate Widget -->
+        <div id="google_translate_element"></div>
+    </section>
 
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-    var Tawk_API = Tawk_API || {};
-    Tawk_API.lang = 'pt'; // Define o idioma para português
-
-    Tawk_LoadStart = new Date();
-    (function(){
-      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-      s1.async = true;
-      s1.src = 'https://embed.tawk.to/66d32debea492f34bc0c33b1/default';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin','*');
-      s0.parentNode.insertBefore(s1,s0);
-    })();
-
-    // Adiciona um atraso para ativar a tradução após o chat ser carregado
-    function initializeTranslation() {
-      setTimeout(function() {
-        if (typeof google !== 'undefined' && google.translate) {
-          google.translate.TranslateElement.getInstance().setEnabled(true);
+    <!-- Scripts -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en', // idioma original da página
+                includedLanguages: 'pt', // idiomas para os quais traduzir
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
         }
-      }, 5000); // 5 segundos de atraso
-    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-    window.onload = initializeTranslation; // Chama a função após a página ser carregada
-  </script>
-  <!--End of Tawk.to Script-->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {};
+        Tawk_API.lang = 'pt'; // Define o idioma para português
+
+        Tawk_LoadStart = new Date();
+        (function(){
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/66d32debea492f34bc0c33b1/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+
+        // Adiciona um atraso para ativar a tradução após o chat ser carregado
+        function initializeTranslation() {
+            setTimeout(function() {
+                if (typeof google !== 'undefined' && google.translate) {
+                    google.translate.TranslateElement.getInstance().setEnabled(true);
+                }
+            }, 5000); // 5 segundos de atraso
+        }
+
+        window.onload = initializeTranslation; // Chama a função após a página ser carregada
+    </script>
+    <!--End of Tawk.to Script-->
         
         <footer>
             <p>&copy; 2024 HexaRealm. Todos os direitos reservados.</p>
