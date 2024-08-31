@@ -191,13 +191,23 @@ var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
 <!-- Script para forçar tradução para Português Brasil -->
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function() {
-    // Função para alterar o idioma da página para Português Brasil
+    // Função para alterar o idioma da página para Português Brasil usando Google Translate
     function translatePage() {
-        var url = window.location.href;
-        if (url.indexOf('hl=pt-BR') === -1) {
-            window.location.href = url + (url.indexOf('?') === -1 ? '?' : '&') + 'hl=pt-BR';
+        if (!document.querySelector('iframe[id*="googtrans"]')) {
+            var script = document.createElement('script');
+            script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+            document.head.appendChild(script);
         }
     }
+
+    // Inicializa o Google Translate
+    window.googleTranslateElementInit = function() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'pt',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    };
 
     // Função para verificar se o chat foi aberto
     function checkChatOpen() {
@@ -218,6 +228,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 </script>
+
+<!-- Container para o Google Translate -->
+<div id="google_translate_element"></div>
+
 
         <footer>
             <p>&copy; 2024 HexaRealm. Todos os direitos reservados.</p>
