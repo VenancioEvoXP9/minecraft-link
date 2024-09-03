@@ -96,54 +96,8 @@
         <p>Para jogar no nosso servidor, você precisará da versão compatível do Minecraft Bedrock. Baixe o APK através do link abaixo:</p>
         <p><a href="https://www.mediafire.com/file/onzt7io6x965e1w/MINECRAFT+1.21.22+OFFICIAL.apk/file" target="_blank">Baixar Minecraft PE 1.21.22</a></p>
         
-        <h2>Passo a Passo para Adicionar o Servidor</h2>
-        <p>Veja nosso tutorial completo e aprenda a como adicionar um servidor manualmente:</p>
-        
-        <img src="etapa_1.jpg" alt="Passo 1 - Instalar Minecraft PE" class="passo">
-        
-        <p><strong>1° PASSO:</strong> Certifique-se de ter instalado a versão correta do jogo, <a href="https://www.apkshub.com/todown/com.mojang.minecraftpe_1.21.0.03_free" target="_blank">Baixar Minecraft PE 1.21.0.03</a>. Após a instalação, acesse o link ao final do passo a passo, aguarde o redirecionamento e clique em <span class="maiuculas">JOGAR</span>.</p>
-
-        <img src="etapa_2.jpg" alt="Passo 2 - Selecionar SERVIDORES" class="passo">
-        
-        <p><strong>2° PASSO:</strong> Após ter clicado em <span class="maiuculas">JOGAR</span>, selecione <span class="maiuculas">SERVIDORES</span> no canto superior direito da tela.</p>
-
-        <img src="etapa_3.jpg" alt="Passo 3 - Adicionar SERVIDOR" class="passo">
-        
-        <p><strong>3° PASSO:</strong> Toque em <span class="maiuculas">ADICIONAR SERVIDOR</span>.</p>
-
-        <img src="etapa_4.jpg" alt="Passo 4 - Inserir Endereço e Porta" class="passo">
-        
-        <p><strong>4° PASSO:</strong> Adicione o endereço e porta especificados em seus respectivos campos dentro do jogo, em seguida clicar no botão "SALVAR". Você pode copiar ENDEREÇO e PORTA abaixo:</p>
-        
-        <div class="button-container">
-            <!-- Campo de texto para copiar o endereço -->
-            <label for="textoEndereco">Endereço:</label>
-            <input type="text" value="neptune.ca.freemcserver.net" id="textoEndereco" readonly>
-
-            <!-- Botão para copiar o endereço -->
-            <button onclick="copiarTexto('textoEndereco')">Copiar Endereço</button>
-            
-            <!-- Campo de texto para copiar a porta -->
-            <label for="textoPorta">Porta:</label>
-            <input type="text" value="44681" id="textoPorta" readonly>
-
-            <!-- Botão para copiar a porta -->
-            <button onclick="copiarTexto('textoPorta')">Copiar Porta</button>
-        </div>
-
-        <!-- JavaScript para copiar o texto -->
-        <script>
-            function copiarTexto(id) {
-                var texto = document.getElementById(id);
-                texto.select();
-                texto.setSelectionRange(0, 99999); // Para dispositivos móveis
-                document.execCommand("copy");
-                alert("Texto copiado: " + texto.value);
-            }
-        </script>
-        
-        <p><strong>Já sabe como adicionar o Server?</strong> Abra o jogo para realizar o procedimento citado, e adicionar o servidor "HexaRealm", clique no link abaixo:</p>
-        <p><a href="minecraft://?addExternalServer=Neptune|neptune.ca.freemcserver.net|28578" target="_blank">Abrir Minecraft</a></p>
+        <p><strong>Adicione HexaRealm à sua lista de servidores</strong>
+        <p><a href="minecraft://?addExternalServer=Neptune|neptune.ca.freemcserver.net|28578" target="_blank">Salvar Servidor</a></p>
 
         <h2>Criar Conta Xbox</h2>
         <p>Para uma experiência mais completa, crie sua conta Xbox para poder desbloquear o sistema de conquistas e impulsionar sua gameplay. É fácil e intuitivo, clique no link abaixo e informe seus dados para a criação da conta, você receberá um código de confirmação por e-mail e precisará criar sua gamertag (nome de jogador).</p>
@@ -151,27 +105,8 @@
         <p><strong>Conta Xbox criada?</strong> <a href="minecraft://?addExternalServer=Neptune|neptune.ca.freemcserver.net|28578" target="_blank">Abra seu jogo</a> e procure a opção "ENTRAR", basta você entrar pelo e-mail e senha criados, a partir da próxima vez que entrar no jogo a conta Xbox começará a ser vinculada automaticamente ao Minecraft.</p>
         <img src="entrar_xbox.jpg" alt="Conta Xbox" class="Conta">
 
-        <h2>Solicitar Permissão de Acesso em Tempo Integral ao Servidor</h2>
-            
-        <p>Em seu Minecraft está salvo nosso servidor, mas você ainda não tem a permissão para jogar nele a hora que quiser, até aqui você só conseguirá jogar no servidor caso alguém abra-o para você, permitindo a entrada de outros jogadores. Isso é particularmente chato, então para entregar a autonomia que você precisa, sem depender de outros players, acesse <a href="https://panel.freemcserver.net/user/login" target="_blank">Gerenciar Servidor</a> e crie uma nova conta.</p>
-        <img src="login_server.jpg" alt="Conta Server" class="Conta">
-        <p><Strong>Atenção! O Username cadastrado deverá ser compartilhado em nosso suporte</Strong>, "o ícone de suporte está em sua tela no canto inferior direito". Vá em "nova conversa" e envie o Username cadastrado através do chat, aguarde nosso retorno avisando que você foi adicionado, pode ser que demore dependendo de nossa disponibilidade, experimente voltar outra hora e verificar a a caixa de bate-papo.</p>
-        <p><strong>Foi aprovado pelo Suporte?</strong> Parabéns! Siga as instruções para saber como operar o acesso ao servidor.
-        <img src="server_add.jpg" alt= "Conta Server" class="Conta">
-
-        <h2>Botões de Ligar e Desligar o Servidor</h2>
-        
-        <p><strong>Start (Ligar):</strong> Utilize o botão Start para iniciar ou reativar o servidor. Se o servidor estiver desligado ou em hibernação (desligado automaticamente por inatividade), clique em Start para ativá-lo. Isso é necessário ao iniciar uma nova sessão ou quando o servidor foi hibernado por falta de jogadores.</p>
-
-        <p><strong>Stop (Desligar):</strong> O botão Stop serve para desligar manualmente o servidor em situações específicas, como manutenção ou atualizações. Desligar manualmente permite um controle mais preciso sobre o encerramento do servidor, evitando atividades inesperadas.</p>
-
-        <p><strong>Funcionamento Automático:</strong> No FreeMcServer.net, o servidor entra automaticamente em hibernação quando todos os jogadores saem e o servidor fica inativo por um período. Para reativar o servidor quando ele estiver hibernado, basta usar o botão Start.</p>
-        
-        <img src="ligar_server.jpg" alt="Ligar Servidor" class="Server">
-
-        <p><strong>Importante:</strong> Periodicamente, você precisará renovar o servidor antes de ligá-lo para garantir que ele continue funcionando sem custos. Veja um anúncio para evitar a necessidade de renovação nas próximas 6 horas, ou em 4 horas se optar por não assistir ao anúncio. Após a renovação, você poderá ligar o servidor e acessar o HexaRealm no jogo normalmente.</p>
-
-        <img src="renovar_server.jpg" alt="Renovar Servidor" class="Server">
+        <h2>Solicite seu acesso ao Servidor</h2>
+        Evie em nosso suporte seu nickname para que possamos permitir seu ingresso ao servidor, no ícone verde, "canto inferior de sua tela" existe um bate-papo, use para se comunicar com o suporte, sobretudo para enviar seu nome de jogador e garantir sua vaga, pode ser que nossa resposta leve tempo, experimente voltar depois e conferir seu bate-papo.
         
         <h2>Considerações Finais</h2>
         <p>Estamos ansiosos para ver você em nosso servidor e esperamos que você tenha uma experiência incrível no HexaRealm. Caso encontre algum problema ou tenha dúvidas, não hesite em nos contatar. Nossa equipe está sempre disponível para ajudar e garantir que sua experiência de jogo seja a melhor possível.</p>
